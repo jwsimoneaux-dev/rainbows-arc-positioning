@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rainbow's Arc Support</title>
+  <title>Rainbow&rsquo;s Arc Support</title>
   <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 </head>
@@ -58,9 +58,13 @@
     background: color-mix(in srgb, var(--navy) 7%, transparent);
   }
   .contact p { margin: 6px 0; max-width: 64ch; }
+  /* The family footer (brand standards, section 7): the Designed-by line, the wish, then the copyright. */
+  .brand-foot .soon { color: var(--muted); font-style: italic; max-width: 62ch; margin: 28px 0 0; }
+  .brand-foot .wish { color: var(--muted); font-style: italic; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; font-size: 1.02rem; max-width: 58ch; margin: 40px 0 0; }
+  .brand-foot .foot { color: var(--muted); font-size: 0.9rem; margin: 10px 0 0; }
 </style>
 <main>
-  <h1>Rainbow's Arc — Support</h1>
+  <h1>Rainbow&rsquo;s Arc — Support</h1>
   <p class="meta">Answers to the questions that come up, in the order they usually come up.
   Anything not covered here: <a href="mailto:rainbow@svrainbow.net">rainbow@svrainbow.net</a>.</p>
 
@@ -74,9 +78,9 @@
   <h2>Getting started</h2>
 
   <details>
-    <summary>What does Rainbow's Arc actually do?</summary>
+    <summary>What does Rainbow&rsquo;s Arc actually do?</summary>
     <p>It turns your phone into a camera sextant. You photograph the sun and the sea horizon in
-    one frame; the app measures the sun's height above the horizon from the photo's own geometry,
+    one frame; the app measures the sun&rsquo;s height above the horizon from the photo&rsquo;s own geometry,
     works the sight against a built-in nautical almanac using the time the photo was taken, and
     gives you a line of position — you are somewhere on that line, give or take a stated number
     of miles. Cross two sights taken hours apart and you get a fix: latitude and longitude, with
@@ -89,27 +93,27 @@
     <summary>What do I need to set up before the first sight?</summary>
     <p>Three things. <strong>Height of eye</strong> — how far above the water you stand when you
     take the photo; it feeds the horizon-dip correction. <strong>A starting position</strong> —
-    start your voyage's dead reckoning at a known place (the marina you left, a buoy, a chart
-    fix). And <strong>a phone clock that's been online recently</strong> — each second of clock
+    start your voyage&rsquo;s dead reckoning at a known place (the marina you left, a buoy, a chart
+    fix). And <strong>a phone clock that&rsquo;s been online recently</strong> — each second of clock
     error costs up to a quarter mile of longitude, so let the phone sync before a long time
-    offline. That's it; the almanac is built in.</p>
+    offline. That&rsquo;s it; the almanac is built in.</p>
   </details>
 
   <details>
     <summary>How do I take a good sun photo?</summary>
     <p>Sun and sea horizon in the same frame, with the horizon a true sea horizon — open water,
     not land, haze, or a cloud bank. Hold the phone any way you like: the horizon in the photo is
-    the level reference, so the boat's roll and your grip don't matter. When the sun rides high,
+    the level reference, so the boat&rsquo;s roll and your grip don&rsquo;t matter. When the sun rides high,
     roll the phone so sun and horizon share the frame corner to corner — the tilt costs nothing.
-    Use the in-app camera when you can; it reads the lens's own calibration for each shot.</p>
+    Use the in-app camera when you can; it reads the lens&rsquo;s own calibration for each shot.</p>
   </details>
 
   <details>
-    <summary>What's the practice mode?</summary>
+    <summary>What&rsquo;s the practice mode?</summary>
     <p>The sight screen offers a practice morning and a practice afternoon: a made-up sun over a
     made-up sea off Galveston, with the clock and position set to match. Mark both well, then
     cross them into a fix on the Camera tab — it should land within a few nautical miles of the
-    practice starting point. It's the whole flow, learnable at the kitchen table.</p>
+    practice starting point. It&rsquo;s the whole flow, learnable at the kitchen table.</p>
   </details>
 
   <h2>Marking the sight</h2>
@@ -120,14 +124,14 @@
     anywhere along the horizon, as far apart as the photo allows — they define the line, not its
     ends. The blue ring goes on the sun: its center is the usual mark, but when glare hides the
     middle, put the ring on the crisp lower or upper edge instead and tell the app which you
-    chose — it corrects for the sun's half-width either way. A loupe magnifies while you drag,
+    chose — it corrects for the sun&rsquo;s half-width either way. A loupe magnifies while you drag,
     and the arrow buttons nudge the selected marker one pixel at a time.</p>
   </details>
 
   <details>
     <summary>Why does the sight time matter so much?</summary>
     <p>The Earth turns fifteen degrees an hour, so each second of time error moves the answer up
-    to a quarter mile. Photos taken with the in-app camera or your phone's camera carry their
+    to a quarter mile. Photos taken with the in-app camera or your phone&rsquo;s camera carry their
     moment with them; photos chosen from your library without a time stamp fall back to the
     clock, and the app asks you to set it. The displayed time is always UTC.</p>
   </details>
@@ -135,49 +139,49 @@
   <details>
     <summary>What are all the corrections in the result table?</summary>
     <p><strong>Horizon dip</strong>: the horizon sits below true level because your eye is above
-    the water. <strong>Refraction</strong>: the atmosphere bends the sun's light upward, more so
+    the water. <strong>Refraction</strong>: the atmosphere bends the sun&rsquo;s light upward, more so
     near the horizon. <strong>Semidiameter</strong>: you marked an edge of the sun, but the
     almanac tracks its center. <strong>Parallax</strong>: the small shift from observing on the
-    Earth's surface rather than its center. The same chain a paper sight reduction works
+    Earth&rsquo;s surface rather than its center. The same chain a paper sight reduction works
     through — shown line by line so you can check it.</p>
   </details>
 
   <h2>The numbers</h2>
 
   <details>
-    <summary>What does "±12 nm" on a sight mean, and why is it sometimes large?</summary>
-    <p>It's the honest uncertainty of that line of position. The biggest contributor is how well
-    the app knows your camera's angle of view: a photo from the in-app camera carries per-shot
-    lens calibration and earns a tight radius; a photo from your library leans on the photo's own
+    <summary>What does &ldquo;±12 nm&rdquo; on a sight mean, and why is it sometimes large?</summary>
+    <p>It&rsquo;s the honest uncertainty of that line of position. The biggest contributor is how well
+    the app knows your camera&rsquo;s angle of view: a photo from the in-app camera carries per-shot
+    lens calibration and earns a tight radius; a photo from your library leans on the photo&rsquo;s own
     metadata or an assumed lens, and the radius widens to match. Marking precision, refraction,
     and your height of eye contribute the rest. The app never hides the number.</p>
   </details>
 
   <details>
-    <summary>What's the difference between a line and a fix?</summary>
-    <p>One sight tells you a line you're somewhere on — it cannot tell you where along it. Two
-    sights with the sun's bearing well changed between them cross into a position. That's why the
-    app keeps saying "one sight is a line, not a position": it's the oldest rule in celestial
+    <summary>What&rsquo;s the difference between a line and a fix?</summary>
+    <p>One sight tells you a line you&rsquo;re somewhere on — it cannot tell you where along it. Two
+    sights with the sun&rsquo;s bearing well changed between them cross into a position. That&rsquo;s why the
+    app keeps saying &ldquo;one sight is a line, not a position&rdquo;: it&rsquo;s the oldest rule in celestial
     navigation, and the app refuses to forget it.</p>
   </details>
 
   <details>
     <summary>Why does the app want my sights hours apart?</summary>
     <p>The fix is found where the lines cross, and lines nearly parallel cross sloppily. The
-    sun's bearing swings through the day, so a mid-morning line and a mid-afternoon line cut at a
+    sun&rsquo;s bearing swings through the day, so a mid-morning line and a mid-afternoon line cut at a
     healthy angle. The fix screen tells you when the crossing is too shallow to trust.</p>
   </details>
 
   <details>
-    <summary>The fix says I'm miles from my dead reckoning. Which is right?</summary>
-    <p>The sky, almost always — that's the point of taking sights. The printed gap between the DR
-    and the fix is real information: it's the current, the leeway, and the optimism in your
+    <summary>The fix says I&rsquo;m miles from my dead reckoning. Which is right?</summary>
+    <p>The sky, almost always — that&rsquo;s the point of taking sights. The printed gap between the DR
+    and the fix is real information: it&rsquo;s the current, the leeway, and the optimism in your
     logged speed, all talking at once. Restart the reckoning from the fix and it starts fresh
     from truth.</p>
   </details>
 
   <details>
-    <summary>What is "local apparent noon" on the Camera tab?</summary>
+    <summary>What is &ldquo;local apparent noon&rdquo; on the Camera tab?</summary>
     <p>The moment the sun crosses your meridian — highest in the sky, bearing due south or north.
     The app predicts it from your DR longitude and counts down to it. A sight within a few
     minutes of noon produces a line running nearly east–west, which reads directly as your
@@ -190,9 +194,9 @@
   <details>
     <summary>How does the dead reckoning work?</summary>
     <p>Like the paper one. You start from a trusted position — a known place, or a fix — and log
-    a leg whenever course or speed changes: "0930, came to 250° at 6 knots." The app advances the
+    a leg whenever course or speed changes: &ldquo;0930, came to 250° at 6 knots.&rdquo; The app advances the
     starting point along your legs and shows the DR for this moment, stamped with the moment
-    it was computed for. Tap "Stopped" when you heave to, anchor, or drift for lunch — a
+    it was computed for. Tap &ldquo;Stopped&rdquo; when you heave to, anchor, or drift for lunch — a
     zero-speed leg holds the plot still.</p>
   </details>
 
@@ -200,8 +204,8 @@
     <summary>I entered something wrong. How do I fix it?</summary>
     <p>Everything you enter, you can correct. Tap a leg to edit its course or speed, or delete
     it. Delete a bad sight or a bad fix from their lists — each asks you to tap twice. Restart
-    the reckoning from any earlier fix. Enter a known position under "I know where I am" to
-    restart it from there. And if the whole story has gone wrong, "Reset the reckoning" wipes
+    the reckoning from any earlier fix. Enter a known position under &ldquo;I know where I am&rdquo; to
+    restart it from there. And if the whole story has gone wrong, &ldquo;Reset the reckoning&rdquo; wipes
     the leg log and holds still until you log the next leg.</p>
   </details>
 
@@ -215,8 +219,8 @@
   <h2>Limits, honestly</h2>
 
   <details>
-    <summary>When can't the app work?</summary>
-    <p>When there's no sun or no sea horizon: at night, under overcast, in fog or haze, or
+    <summary>When can&rsquo;t the app work?</summary>
+    <p>When there&rsquo;s no sun or no sea horizon: at night, under overcast, in fog or haze, or
     inshore with land across the horizon. In high summer at midday the sun can stand too high
     for the camera to hold both it and the horizon — the noon card warns you, and the morning
     and afternoon still work fine, which is where sun navigation always lived. The camera sight
@@ -236,17 +240,17 @@
   <details>
     <summary>Does anything I do leave my phone?</summary>
     <p>No. No accounts, no servers, no analytics, no network requests. Photos are processed on
-    the device and never uploaded. The optional sextant drill and the deck log's "Check against
-    GPS" can each read your position once, on the spot — to score a practice sight, or to grade
+    the device and never uploaded. The optional sextant drill and the deck log&rsquo;s &ldquo;Check against
+    GPS&rdquo; can each read your position once, on the spot — to score a practice sight, or to grade
     your reckoning — and it is never stored or sent anywhere. See the
-    <a href="privacy.html">privacy policy</a> — it's short because there's little to disclose.</p>
+    <a href="privacy.html">privacy policy</a> — it&rsquo;s short because there&rsquo;s little to disclose.</p>
   </details>
 
   <h2>The sextant drill</h2>
 
   <details>
     <summary>I own a real sextant. Can the app check my sights?</summary>
-    <p>Yes — that's the sextant drill. Shoot the sun, a planet, or one of twenty-one named
+    <p>Yes — that&rsquo;s the sextant drill. Shoot the sun, a planet, or one of twenty-one named
     stars, tap <strong>MARK</strong> at the instant the body kisses the horizon, and enter what
     the arc read, degrees and minutes. The app applies your index correction, height of eye,
     refraction, semidiameter and parallax, computes what the sextant <em>should</em> have read
@@ -258,9 +262,9 @@
   <details>
     <summary>What is index correction?</summary>
     <p>Sextants rarely read exactly zero when the horizon is brought to itself. Check yours: if
-    it reads 2.0′ when it should read zero ("on the arc"), your correction is −2.0; if it reads
-    below zero ("off the arc"), +2.0. Enter it once in the drill and every score accounts for
-    it. An unnoticed index error is the most common reason a beginner's sights all miss the same
+    it reads 2.0′ when it should read zero (&ldquo;on the arc&rdquo;), your correction is −2.0; if it reads
+    below zero (&ldquo;off the arc&rdquo;), +2.0. Enter it once in the drill and every score accounts for
+    it. An unnoticed index error is the most common reason a beginner&rsquo;s sights all miss the same
     way.</p>
   </details>
 
@@ -269,8 +273,12 @@
     <p>Write to <a href="mailto:rainbow@svrainbow.net">rainbow@svrainbow.net</a> and describe
     what you saw and what you expected — screenshots of the result card help enormously. Reports
     like that are how this app gets better.</p>
-    <p>Designed by Rainbow's End Marine. Apps for sailors, by sailors.</p>
   </div>
+  <footer class="brand-foot">
+    <p class="soon">Designed by Rainbow&rsquo;s End Marine. Apps for sailors, by sailors.</p>
+    <p class="wish">May you find a rainbow&rsquo;s end and treasure found wherever you sail or set your anchor.</p>
+    <p class="foot">&copy; 2026 Rainbow&rsquo;s End Marine, LLC · <a href="mailto:rainbow@svrainbow.net">rainbow@svrainbow.net</a></p>
+  </footer>
 </main>
 </body>
 </html>
